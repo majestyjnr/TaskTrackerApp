@@ -1,7 +1,16 @@
+import './components/Header'
+import Header from './components/Header';
+import Tasks from "./components/Tasks";
 function App() {
+  const developerName = "Developer Majesty"
   return (
-    <div className='App'>
-      <h1>Task Tracker App</h1>
+    
+    <div className='container'>
+      <Header/>
+      <hr/>
+      <br/>
+    <center><p>Developed By {developerName}</p></center> 
+    <Tasks/> 
     </div>
   );
 }
