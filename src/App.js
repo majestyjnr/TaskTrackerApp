@@ -1,9 +1,11 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <center><h1>Task Tracker App</h1></center> 
+    <div className='App'>
+      <h1>Task Tracker App</h1>
+    </div>
   );
 }
 
