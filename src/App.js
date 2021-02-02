@@ -37,6 +37,10 @@ function App() {
     },
 ])
 
+// Delete Task Function
+const deleteTask = () =>{
+
+}
   return (
     
     <div className='container'>
