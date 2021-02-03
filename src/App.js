@@ -9,31 +9,31 @@ function App() {
   const [tasks, setTasks] = useState([
     {
         id : 1,
-        theTask : 'Go to Wesley Grammar School',
+        text : 'Go to Wesley Grammar School',
         day: "1st February at 7:00 am",
         reminder: true
     },
     {
         id : 2,
-        theTask : 'Start learning ReactJs',
+        text : 'Start learning ReactJs',
         day: "1st February at 8:00 am",
         reminder: true
     },
     {
         id : 3,
-        theTask : 'Go to youth fellowship meeting',
+        text : 'Go to youth fellowship meeting',
         day: "1st February at 7:30 pm",
         reminder: true
     },
     {
         id : 4,
-        theTask : 'Go to Early Foundation Publications',
+        text : 'Go to Early Foundation Publications',
         day: "6th February at 7:00 am",
         reminder: true
     },
     {
         id : 5,
-        theTask : 'Celebrate birthday',
+        text : 'Celebrate birthday',
         day: "22nd February at 7:00 am",
         reminder: true
     },
@@ -49,10 +49,11 @@ const toggleReminder = (id) =>{
 }
 
 const addTask = (task) => {
-  const id = Math.floor(Math.random() * 100) + 1
+  const id = Math.floor(Math.random() * 10000) + 1
 
-  const newTask = {id, ...task}
+  const newTask = { id, ...task }
 
+  console.table(newTask)
   setTasks([...tasks, newTask])
 }
 
