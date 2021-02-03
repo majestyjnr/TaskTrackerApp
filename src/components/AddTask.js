@@ -10,9 +10,12 @@ const AddTask = ({onAdd}) => {
 
         if(!text){
             alert('Please add a task before submitting')
-
-            onAdd({text, day, reminder})
-        }
+        }    
+        
+        onAdd({text, day, reminder})
+        setText('') 
+        setDay('')
+        setReminder(false)
     }
 
     return (
