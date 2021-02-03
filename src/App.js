@@ -48,12 +48,16 @@ const toggleReminder = (id) =>{
   setTasks(tasks.map((task) => task.id === id ? {...task, reminder: !task.reminder} : task))
 }
 
+const addTask = (task) => {
+  console.log(task)
+}
+
   return (
     
     <div className='container'>
       <Header/>
       <hr/>
-      <AddTask/>
+      <AddTask onAdd={addTask}/>
       <br/>
 
     {tasks.length > 0 ? <Tasks tasks = {tasks} onDelete={deleteTask} onToggle={toggleReminder}/> : 'No Task Added'}
